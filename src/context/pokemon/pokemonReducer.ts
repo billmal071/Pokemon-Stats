@@ -7,10 +7,10 @@ import {
   CLEAR_POKEMONS,
   CLEAR_ERROR,
 } from "../types";
-import { PokemonType } from "../../types/interface.type";
-import { ReducerAction } from "../types";
+import { PokemonDataType, PokemonType, PokemonsDataType } from "../../types/interface.type";
+import { PokemonReducerAction } from "../types";
 
-export default (state: PokemonType, action: ReducerAction): PokemonType => {
+export default (state: PokemonType, action: PokemonReducerAction): PokemonType => {
   switch (action.type) {
     case GET_POKEMONS:
       return {
@@ -34,13 +34,13 @@ export default (state: PokemonType, action: ReducerAction): PokemonType => {
       return {
         ...state,
         loading: false,
-        pokemons: [],
+        pokemons: [] as PokemonsDataType,
       };
     case CLEAR_POKEMON:
       return {
         ...state,
         loading: false,
-        pokemon: {},
+        pokemon: {} as PokemonDataType,
       };
     case POKEMON_ERROR:
       return {

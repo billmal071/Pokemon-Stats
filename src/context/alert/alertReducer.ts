@@ -1,12 +1,14 @@
-import { SET_ALERT, REMOVE_ALERT } from '../types';
+import { SET_ALERT, REMOVE_ALERT } from "../types";
+import { AlertReducerAction } from "../types";
+import { AlertType } from "../../types/interface.type";
 
-export default (state, action) => {
-    switch(action.type) {
-        case SET_ALERT:
-            return [...state, action.payload];
-        case REMOVE_ALERT:
-            return state.filter(alert => alert.id !== action.payload)
-        default:
-            return state;
-    }
-}
+export default (state: AlertType, action: AlertReducerAction): AlertType => {
+  switch (action.type) {
+    case SET_ALERT:
+      return { ...action.payload };
+    case REMOVE_ALERT:
+      return state;
+    default:
+      return state;
+  }
+};

@@ -11,6 +11,7 @@ import {
   CLEAR_POKEMONS,
   CLEAR_ERROR,
 } from "../types";
+import { PokemonDataType, PokemonsDataType } from "../../types/interface.type";
 
 interface Props {
   children: ReactNode;
@@ -18,8 +19,8 @@ interface Props {
 
 const PokemonState: React.FC<Props> = ({ children }): ReactElement => {
   const initialState = {
-    pokemons: [{}],
-    pokemon: {},
+    pokemons: [] as PokemonsDataType,
+    pokemon: {} as PokemonDataType,
     pokemonSearch: {},
     loading: true,
     error: null,
