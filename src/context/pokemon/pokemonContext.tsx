@@ -8,7 +8,7 @@ import {
 const initial = {
   pokemons: [] as PokemonsDataType,
   pokemon: {} as PokemonDataType,
-  pokemonSearch: {},
+  pokemonSearch: {} as PokemonDataType,
   loading: false,
   error: null,
   getPokemon: () => {},

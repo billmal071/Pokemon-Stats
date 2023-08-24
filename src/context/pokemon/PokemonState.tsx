@@ -21,7 +21,7 @@ const PokemonState: React.FC<Props> = ({ children }): ReactElement => {
   const initialState = {
     pokemons: [] as PokemonsDataType,
     pokemon: {} as PokemonDataType,
-    pokemonSearch: {},
+    pokemonSearch: {} as PokemonDataType,
     loading: true,
     error: null,
   };

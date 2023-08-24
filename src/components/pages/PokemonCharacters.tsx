@@ -46,7 +46,7 @@ const PokemonCharacter = () => {
           <PokemonItem key={index} characters={characters} />
         ))}
       </div>
-      <div className="justify-content-center">
+      <div className="">
         <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}
@@ -55,14 +55,14 @@ const PokemonCharacter = () => {
           marginPagesDisplayed={2}
           pageRangeDisplayed={1}
           onPageChange={handlePageClick}
-          containerClassName={"mx-auto justify-content-center pagination"}
-          pageClassName={"page-item"}
+          containerClassName={"join pagination"}
+          pageClassName={"join-item btn page-item"}
           pageLinkClassName={"page-link"}
-          breakClassName={"page-item"}
+          breakClassName={"page-item join-item btn btn-disabled"}
           breakLinkClassName={"page-link"}
-          previousClassName={"page-item"}
+          previousClassName={"page-item join-item btn"}
           previousLinkClassName={"page-link"}
-          nextClassName={"page-item"}
+          nextClassName={"page-item join-item btn"}
           nextLinkClassName={"page-link"}
           activeClassName={"active"}
         />

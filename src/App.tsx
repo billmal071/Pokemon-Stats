@@ -8,6 +8,11 @@ import PokemonProfile from "./components/pages/PokemonProfile";
 import Alert from "./components/layout/Alert";
 import PokemonState from "./context/pokemon/PokemonState";
 import AlertState from "./context/alert/AlertState";
+// import bootstrap from "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./App.scss";
 
 const App = () => {

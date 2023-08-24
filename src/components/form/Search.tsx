@@ -14,7 +14,7 @@ const Search = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (text === "") {
-      setAlert("Enter a value to search", "danger");
+      setAlert("Enter a value to search", "warning");
     }
     searchPokemon(text);
     setText("");
@@ -27,7 +27,7 @@ const Search = () => {
 
   return (
     <div>
-      <form action="" onSubmit={onSubmit} className="mb-3">
+      <form onSubmit={onSubmit} className="mb-3">
         <label htmlFor="text"></label>
         <input
           className="form-control-plaintext border border-dark mb-2 pl-2"

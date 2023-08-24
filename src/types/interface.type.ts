@@ -94,7 +94,7 @@ export type PokemonsDataType = Array<{
 export type PokemonType = {
   pokemons: PokemonsDataType;
   pokemon: PokemonDataType;
-  pokemonSearch: {};
+  pokemonSearch: PokemonDataType;
   loading: boolean;
   error: any;
 };
@@ -102,7 +102,7 @@ export type PokemonType = {
 export type PokemonContextType = {
   pokemons: PokemonsDataType;
   pokemon: PokemonDataType;
-  pokemonSearch: {};
+  pokemonSearch: PokemonDataType;
   loading: boolean;
   error: any;
   getPokemon: () => void;

@@ -1,12 +1,12 @@
-import React from 'react';
-import PokemonCharacters from './PokemonCharacters';
+import React from "react";
+import PokemonCharacters from "./PokemonCharacters";
 
 const Pokemon = () => {
-    return (
-        <div>
-            <PokemonCharacters />
-        </div>
-    )
-}
+  return (
+    <div>
+      <PokemonCharacters />
+    </div>
+  );
+};
 
 export default Pokemon;
