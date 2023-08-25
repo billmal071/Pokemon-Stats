@@ -46,7 +46,7 @@ const PokemonCharacter = () => {
           <PokemonItem key={index} characters={characters} />
         ))}
       </div>
-      <div className="">
+      <div className="container">
         <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}
